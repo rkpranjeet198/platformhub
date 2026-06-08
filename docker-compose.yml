@@ -1,0 +1,16 @@
+services:
+
+  backstage:
+
+    build:
+      context: .
+
+    container_name: platformhub
+
+    ports:
+      - "7007:7007"
+
+    volumes:
+      - ./packages/backend/backstage-data:/app/backstage-data
+
+    restart: unless-stopped
