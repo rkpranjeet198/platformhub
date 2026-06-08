@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+
+metadata:
+  name: templates
+
+spec:
+  type: file
+
+  targets:
+    - ../../templates/nodejs-template/template.yaml
+    - ../../templates/react-template/template.yaml

@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+
+metadata:
+  name: platformhub
+
+spec:
+  owner: platform-team
+  domain: platform

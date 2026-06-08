@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+
+metadata:
+  name: ${{ values.name }}
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+
+spec:
+  type: service
+  owner: group:default/platform-team
+  system: platformhub
+  lifecycle: production
