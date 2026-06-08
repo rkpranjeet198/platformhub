@@ -1,16 +1,13 @@
+version: "3.9"
+
 services:
-
   backstage:
-
-    build:
-      context: .
-
-    container_name: platformhub
-
+    image: backstage-node22:latest
+    container_name: backstage
     ports:
+      - "3000:3000"
       - "7007:7007"
-
+    environment:
+      - HOST=0.0.0.0
     volumes:
-      - ./packages/backend/backstage-data:/app/backstage-data
-
-    restart: unless-stopped
+      - ./packages/backend/backstage-data:/app/packages/backend/backstage-data
